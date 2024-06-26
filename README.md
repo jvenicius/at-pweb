@@ -1,7 +1,3 @@
-# Aula de Persistência - Programação para Web
-
-Este repositório contém o projeto desenvolvido para a aula de Programação para Web do curso de Análise e Desenvolvimento de Sistemas da UFCA. O objetivo desta aula é ensinar conceitos de persistência de dados utilizando MongoDB e Mongoose, integrados com o framework Express.
-
 ## Estrutura do Projeto
 
 O projeto está organizado em camadas para facilitar a manutenção e a escalabilidade:
@@ -21,31 +17,9 @@ O projeto está organizado em camadas para facilitar a manutenção e a escalabi
 
 ## Funcionalidades da API
 
-A API gerencia o cadastro de usuários e a busca por usuários por e-mail.
+A API gerencia o cadastro, atualização e remoção de usuários e alimentos.
 
 ### Pré-requisitos
 
 - Node.js instalado.
 - MongoDB instalado ou uma conta no MongoDB Atlas.
-
-### Instalação
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/vilelaricardo/aula_persistencia.git
-   cd aula_persistencia
-    ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Configure a conexão com o MongoDB no arquivo `app.js`:
-  ```js
-    mongoose.connect('mongodb+srv://<username>:<password>@<clusterName>.uyyor32.mongodb.net', {
-        retryWrites: true,
-        w: 'majority',
-        appName: 'AulaWeb'
-    });
-  ```
-
